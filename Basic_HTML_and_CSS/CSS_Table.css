@@ -1,0 +1,15 @@
+table {
+	border: 1px solid gray;
+}
+tr, th {
+	background-color: FloralWhite;
+	color: LightSlateGray;
+}
+tr, td {
+	background-color: FloralWhite;
+	color: plum;
+}
+td:hover {
+	background-color: PaleVioletRed;
+	color: OldLace;
+}
