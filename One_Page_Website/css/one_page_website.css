@@ -1,0 +1,29 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:8px;
+    background-color: ivory;
+}
+
+section {
+    border: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+input[type=text] {
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+}
