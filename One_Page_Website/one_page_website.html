@@ -4,6 +4,7 @@
 	<title>Photography</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="./css/one_page_website.css">
+	<script src="one_page_website.js"></script>
 </head>
 
 <body>
@@ -44,6 +45,75 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="gallery/thumb/plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="gallery/thumb/plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="gallery/thumb/plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="gallery/thumb/plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="gallery/plant1.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="gallery/plant2.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="gallery/plant3.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="gallery/plant4.png" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="gallery/thumb/plant1-small.png" onclick="currentSlide(1)" alt="Couples">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="gallery/thumb/plant2-small.png" onclick="currentSlide(2)" alt="Graduation">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="gallery/thumb/plant3-small.png" onclick="currentSlide(3)" alt="Night Landscapes">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="gallery/thumb/plant4-small.png" onclick="currentSlide(4)" alt="Ocean Long Exposure">
+	  </div>
+	</div>
+  </div>
 	
 	<section id="form">
 		<div>
@@ -63,6 +133,9 @@
 			</div>
 		</div>
 	</section>
+
+
+	
 <footer>
 	Mspaiva Photography&copy;<br>
 	<a href="#form">Contact Me</a><br>
